@@ -50,9 +50,9 @@ export default function Navbar() {
   };
   
   return (
-    <div className="fixed top-4 sm:top-6 left-0 right-0 z-[100] flex items-center justify-center pointer-events-none isolate">
+    <div className="fixed top-2 sm:top-4 md:top-6 left-0 right-0 z-[100] flex items-center justify-center pointer-events-none isolate">
       <motion.nav 
-        className="rounded-full flex items-center justify-between px-4 sm:px-6 pointer-events-auto"
+        className="rounded-full flex items-center justify-between px-3 sm:px-4 md:px-6 pointer-events-auto"
         initial="expanded"
         animate={scrolled ? "collapsed" : "expanded"}
         variants={navbarVariants}
@@ -66,8 +66,8 @@ export default function Navbar() {
           className="flex items-center"
           variants={logoVariants}
         >
-          <NavigationLink href="/" className="flex items-center space-x-2 p-2 -m-2">
-            <div className="w-6 h-6 sm:w-7 sm:h-7 bg-white rounded-md flex items-center justify-center">
+          <NavigationLink href="/" className="flex items-center space-x-1.5 sm:space-x-2 p-2 -m-2">
+            <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 bg-white rounded-md flex items-center justify-center">
               <span className="text-black font-bold text-xs sm:text-sm">Y</span>
             </div>
             <span className="font-bold text-white text-sm sm:text-base">Yash</span>
