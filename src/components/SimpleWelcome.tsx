@@ -179,15 +179,15 @@ export default function SimpleWelcome() {
       
       {/* Animated Navbar */}
       <motion.div 
-        className="w-full absolute top-0 z-10"
+        className="w-full absolute top-0 z-50"
         initial={{ height: "60px", opacity: 0.7 }}
         animate={navbarControls}
       >
         <Navbar />
       </motion.div>
       
-      {/* Main content */}
-      <div className="max-w-5xl mx-auto px-4 py-16 sm:py-24 flex flex-col items-center space-y-8 sm:space-y-16 relative z-10">
+      {/* Main content - adjusted to not overlap with navbar */}
+      <div className="max-w-5xl mx-auto px-4 pt-40 pb-16 sm:pt-48 sm:pb-24 flex flex-col items-center space-y-8 sm:space-y-16 relative z-10">
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-500 via-cyan-400 to-green-500 bg-clip-text text-transparent mb-4 sm:mb-6">
             Hi, I&apos;m Yash
